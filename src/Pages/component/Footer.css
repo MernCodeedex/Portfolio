@@ -268,4 +268,78 @@
     background-color: hsl(0, 0%, 100%);
   }
   
+  @media only screen and (max-width: 480px) {
+    .lets {
+      font-size: 36px;
+    }
+  
+    .social-icons a {
+      font-size: 1.5em;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .footer {
+      padding: 30px 10px;
+    }
+  
+    .lets {
+      font-size: 28px;
+      margin-left: 10px;
+      margin-top: 32px;
+    }
+  
+    .mkmkmk {
+      margin-left: 10px !important;
+      font-size: 14px;
+    }
+  
+    .footer-sections {
+      margin-top: 20px;
+    }
+  
+    .links, .social, .contact-form {
+      margin: 10px 0;
+    }
+  
+    .social {
+      margin-top: 20px;
+    }
+  
+    .social-icons {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  
+    .social-icons a {
+      font-size: 1.5em;
+      margin: 5px 15px 5px 0;
+    }
+  
+    .contact-form {
+      margin-top: 30%;
+      margin-right: 10%;
+    }
+  
+    .contact-form input,
+    .contact-form button {
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    .contact-form button[type="submit"] {
+      width: auto;
+      padding: 10px 0px;
+      margin-top: 10px;
+    }
+  
+    .footer-note {
+      margin-left: 10px !important;
+      font-size: 0.7em;
+    }
+  
+    .line-container p {
+      font-size: 24px !important;
+    }
+  }
   

@@ -564,64 +564,69 @@ function Home() {
 
       {/* Works section */}
       <div className="mkmk" ref={worksRef} style={{ padding: "50px 0", backgroundColor: "black", marginTop: '-16px' }}>
-      <div className="works-container">
-        <div className="works-left-column" style={{ alignItems: 'center' }}>
-          <p id="nvb" style={{ whiteSpace: "nowrap" }} className="works-title">
-            Works I have done <br />
-            <span style={{ fontSize: "16px", display: 'block', padding: '10px 0' }}>
-              I made Creative Designs, that create a lasting impact on brands.
-            </span>
-          </p>
-          <br />
-        </div>
-
-        <div className="works-right-column">
-          <div className="works-no-scrollable">
-            {worksTrail.map((animation, index) => (
-              <animated.div key={index} style={animation} className={`work-item ${works[index].style}`}>
-                <a
-                  style={{ textDecoration: "none", color: "black", whiteSpace: "nowrap" }}
-                  href={works[index].link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Row>
-                    <Col>
-                      <p className="work-title" id="nvb" style={{  textDecoration: "none" }}>
-                        {works[index].title}
-                      </p>
-                    </Col>
-                    <Col>
-                      <p className="work-year" id="nvb" style={{  textDecoration: "none" }}>
-                        {works[index].year}
-                      </p>
-                    </Col>
-                  </Row>
-                  <div  className={`work-image work-image-${index + 1}`}>
-                    <img id="wimg" src={works[index].image} alt={works[index].title} />
-                  </div>
-                </a>
-              </animated.div>
-            ))}
-          </div>
-          <div ref={imagesEndRef}></div> {/* Reference for the end of images */}
-        </div>
-      </div>
-
-      <p id="nvb" style={{ fontSize: '16px', marginLeft: '6%', color: 'white', marginTop: '10%' }}>
-        Partner with us to bring your vision to life with designs that resonate and deliver
+  <div className="works-container">
+    <div className="works-left-column" style={{ alignItems: 'center' }}>
+      <p id="nvb" className="works-title">
+        Works I have done <br />
+        <span style={{ fontSize: "16px", display: 'block', padding: '10px 0' }}>
+          I made Creative Designs, that create a lasting impact on brands.
+        </span>
       </p>
-      <div className="svg-scroll-container">
-        {svgs.map((svg, index) => (
-          <img
-            key={index}
-            src={svg}
-            alt={`SVG ${index}`}
-            className="svg-item"
-          />
+      <br />
+    </div>
+
+    <div className="works-right-column">
+      <div className="works-no-scrollable">
+        {worksTrail.map((animation, index) => (
+          <animated.div 
+            key={index} 
+            style={animation} 
+            className={`work-item work-item-${index + 1} ${works[index].style}`}
+          >
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href={works[index].link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Row>
+                <Col>
+                  <p className="work-title" id="nvb" style={{ textDecoration: "none" }}>
+                    {works[index].title}
+                  </p>
+                </Col>
+                <Col>
+                  <p className="work-year" id="nvb" style={{ textDecoration: "none" }}>
+                    {works[index].year}
+                  </p>
+                </Col>
+              </Row>
+              <div className={`work-image work-image-${index + 1}`}>
+                <img src={works[index].image} alt={works[index].title} />
+              </div>
+            </a>
+          </animated.div>
         ))}
       </div>
+      <div ref={imagesEndRef}></div> {/* Reference for the end of images */}
     </div>
+  </div>
+
+  <p id="nvb" style={{ fontSize: '16px', marginLeft: '6%', color: 'white', marginTop: '10%' }}>
+    Partner with us to bring your vision to life with designs that resonate and deliver
+  </p>
+  <div className="svg-scroll-container">
+    {svgs.map((svg, index) => (
+      <img
+        key={index}
+        src={svg}
+        alt={`SVG ${index}`}
+        className="svg-item"
+      />
+    ))}
+  </div>
+</div>
+
 
 
 
