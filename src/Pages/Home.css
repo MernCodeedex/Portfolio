@@ -1,0 +1,696 @@
+.slick-dots{
+  display: none !important;
+}
+/* Home.css */
+
+.works-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.works-left-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: white;
+  padding: 20px;
+}
+
+
+.works-title {
+  position: fixed;
+  top: 0;
+  padding-left: 47%;
+  font-size: 32px;
+  z-index: 1;
+  width: 100%; /* Ensure it covers the entire width */
+  margin-top: 64px;
+}
+
+
+
+
+.works-title::before {
+  content: '';
+  position: absolute;
+  left: 41%;
+  top: 35%;
+  transform: translateY(-50%);
+  width: 5%;
+  height: 2px;
+  background-color: white;
+}
+
+.works-right-column {
+  padding: 20px;
+  background-color: black;
+  width: 60%;
+  float: right;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-top: -29px;
+}
+.nm{
+  margin-left: 61%;
+}
+.works-no-scrollable {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+}
+
+.work-image {
+ width: 50%;
+
+  border-radius: 8px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .works-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #sarang{
+    font-size: 40px;
+  }
+  .works-right-column {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .works-scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  }
+  .works-scrollable::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+  .work-item {
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  
+}
+
+.work-title {
+ 
+  font-size: 24px;
+}
+#wimg{
+  width: 10px;
+}
+.work-year{
+  font-size: 24px;
+}
+.works-right-column::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.works-right-column {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+footer {
+  transition: background-color 1s ease-in-out;
+}
+
+.section-transition {
+  transition: background-color .1s ease-in-out; /* Adjust transition duration */
+}
+
+.footer-transition {
+  transition: background-color .1s ease-in-out; /* Adjust transition duration */
+}
+
+/* Footer background animation */
+@keyframes backgroundChange {
+  from {
+    background-color: #000;
+  }
+  to {
+    background-color: #333;
+  }
+}
+
+footer {
+  animation: backgroundChange 2s forwards;
+}
+
+
+.logo{
+    width: 50%;
+}
+.nav{
+    background-color: #FFFFFF;
+   
+    height: 70%;
+ width: 78%;
+  
+}
+
+.navitems{
+    
+    font-family: "Metropolis-Light";
+  
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
+}
+.cwtbutton{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "Metropolis-Light";
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.cwtbutton:hover{
+  background-color: #FFFFFF;
+  color: #000;
+  border: 1px solid black;
+}
+.firsthead{
+    text-align: center;
+    font-family: "Metropolis-Light";
+
+    margin-top: 64px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.carousel-control-prev{
+  display: none !important;
+}
+.carousel-control-next-icon{
+  display: none !important;
+}
+#nvb{
+  font-family: "Metropolis-Light";
+
+}
+@font-face {
+  font-family: 'HelveticaUltraCompressed';
+  src: url('./Fonts/Helvetica\ Ultra\ Compressed.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Metropolis-Light';
+  src: url('./Fonts/Metropolis-Light.otf') format('opentype');
+}
+.mainhead{
+  font-family: 'HelveticaUltraCompressed', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 66px;
+    margin-top: 32px;
+}
+.headabout{
+    text-align: center;
+    padding-left: 180px;
+    padding-right: 180px;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Metropolis-Light";
+    font-weight: 400;
+    margin-top: 32px;
+
+
+}
+.hirebutton {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Metropolis-Light";
+  padding-left: 20px;
+  padding-right: 10px;
+ margin-top: 32px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease; 
+  position: relative; /* Ensure the pseudo-element is positioned relative to the button */
+}
+.hirebutton {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Metropolis-Light";
+  padding: 10px 20px; /* Initial padding */
+  border: 2px solid transparent;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  position: relative; /* Ensure the pseudo-element is positioned relative to the button */
+  overflow: hidden; /* Prevents overflow of content */
+}
+
+
+
+
+
+@keyframes backgroundChange {
+  0% {
+    background-color: #F4F4F4;
+  }
+  100% {
+    background-color: #000000;
+  }
+}
+
+.background-transition {
+  animation: backgroundChange 1s forwards;
+}
+
+.background-reverse {
+  animation: backgroundChange 1s reverse forwards;
+}
+
+
+
+.carousel-container {
+  position: relative;
+  margin-top: 32px;
+}
+
+.logoz-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logoz {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+/* Add this CSS code */
+.linear-gradient-background {
+  background: linear-gradient(180deg, #F4F4F4 0%, #000000 100%);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.mainimg{
+width: 100%;
+}
+.abouthead {
+    padding: 0 0px;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 32px;
+}
+.custom-link {
+  color: black;
+  text-decoration: underline;
+  text-decoration-thickness: 0px; /* Adjust the thickness */
+  text-underline-offset: 2px;    /* Adjust the offset */
+}
+.line-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 64px;
+}
+
+.line {
+    flex: 0.06;
+    height: 1px;
+    background-color: #000;
+}
+.lineed {
+    flex: 0.06;
+    height: 1px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.aboutdo {
+    padding: 0 10px;
+    white-space: nowrap;
+    font-weight: 390;
+    
+}
+.mkmk{
+  margin-top: 64px;
+}
+.mkm{
+  margin-top: 32px;
+}
+#dos{
+  margin-top: 64px;
+}
+.linedo {
+    flex: 4 ;
+    height: 1px;
+    background-color: #000;
+}
+
+.line-containerdo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.App {
+  font-family: "Metropolis-Light";  padding: 20px;
+}
+
+.skills-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skills-container h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.skill-item {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: all 1s ease; /* Smooth transition for all properties */
+  position: relative;
+  font-size: 16px;
+}
+
+.skill-item .percentage {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+ 
+  font-size: 13px;
+  transform: translateY(-50%);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease, right 2s ease; /* Smooth transition for opacity and position */
+  color: #000000;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+  
+  .App {
+    font-family: "Metropolis-Light";
+    padding: 20px;
+  }
+  #aboutt{
+    margin-top: -14px;
+  }
+  .about-section {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .about-text {
+    padding-right: 20px;
+  }
+  
+  .about-text h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+  }
+  
+  .about-text p {
+    font-family: "Metropolis-Light";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    
+  }
+  
+  .about-image-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .about-image {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+    margin-top: -19%;
+  }
+  
+  .about-image::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    background-color: transparent;
+    z-index: -1;
+  }
+  
+  .about-image::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 97%;
+    background-color: #5abfb0;
+    z-index: -2;
+  }
+  
+
+  .caro {
+    background-image: url('https://i.postimg.cc/xC2Z1WkH/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  
+  @media only screen and (max-width: 767px) {
+    .nav {
+      height: 70%;
+      width: 45%;
+     margin-left: 30%;/* Adjust width for smaller screens */
+    }
+  
+    .firsthead {
+      margin-top: 10%; /* Adjust margin-top for smaller screens */
+    }
+  
+    .headabout {
+      padding-left: 10px;
+      padding-right: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .hirebutton {
+      width: 30%; /* Make the button full width */
+    }
+  
+    .logo,
+    .cwtbutton {
+      display: none; /* Hide logo and "Call for an Interview" button */
+    }
+    .mainimg{
+      height: 200px;
+      }
+      #imj{
+        height: 200px;
+      }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .logo {
+      width: 50%; /* Set width of logo for laptop devices */
+    }
+  
+    .cwtbutton {
+      display: block; /* Show "Call for an Interview" button for laptop devices */
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 920px) {
+    .firsthead {
+      margin-top: 8%; /* Adjust margin-top for screens between 760px and 920px */
+    }
+    .logo,
+    .cwtbutton {
+      display: none; /* Hide logo and "Call for an Interview" button */
+    }
+  }
+
+
+  /* Media Queries */
+@media only screen and (max-width: 570px) and (max-width: 650px) {
+  .nav {
+    height: 70%;
+    width: 55%;
+   margin-left: 30%;
+}
+}
+@media only screen and (max-width: 580px)  {
+  .nav {
+    height: 70%;
+    width: 60%;
+   margin-left: 30%;
+}
+}
+@media only screen and (max-width: 480px)  {
+  .nav {
+    height: 70%;
+    width: 88%;
+   margin-left: 10%;
+}
+}
+@media only screen and (max-width: 350px)  {
+  .nav {
+    height: 70%;
+    width: 91%;
+   margin-left: 5%;
+}
+}
+
+
+@media only screen and (min-width: 768px)  {
+  .nav {
+    height: 70%;
+    width: 300px;
+   margin-left: -50%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .nav {
+    /* Adjust styles for screen sizes between 992px and 1199px */
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .nav {
+    height: 70%;
+    width: 300px;
+   margin-left: -20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+.about-image {
+ margin-top: 13%;
+}
+
+}
+
+.svg-scroll-container {
+  display: flex;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  white-space: nowrap; /* Keep all SVGs in a single line */
+  animation: scrollAnimation 10s linear infinite; /* Adjust animation duration */
+  background-color: #000;
+  margin-top: 64px;
+}
+
+@keyframes scrollAnimation {
+  100% { transform: translateX(0); }
+  0% { transform: translateX(calc(100%)); } /* Adjust to move the container completely */
+}
+
+.svg-item {
+  width: 85px; /* Adjust SVG width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 150px; /* Adjust spacing between SVGs */
+}
+
+.svg-scroll-container::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome, Safari, and Opera */
+}
+/* Specific styling for each work item */
+.work-item-1 .work-image {
+ margin-left: -21px;
+}
+
+.work-item-2 .work-title {
+margin-left: -120px;
+}
+.work-item-2 .work-image {
+  margin-left: 24%;
+ }
+ .work-item-4 .work-image {
+  margin-left: 24%;
+ }
+ .work-item-5 .work-image {
+  margin-left: -21px;
+ }
+ .work-item-6 .work-image {
+  margin-left: -21px;
+ }
+
+
+.work-item-3 .work-title {
+  margin-left: 9px;
+}
+.work-item-4 .work-title {
+  margin-left: -68px;
+}
+.work-item-6 .work-title {
+  margin-left: -68px;
+}
+.work-item-1 .work-year {
+  margin-left: 59%;
+}
+.work-item-2 .work-year {
+  margin-left: 59%;
+}
+.work-item-4 .work-year {
+  margin-left: 59%;
+}
+.work-item-5 .work-year {
+  margin-left: 59%;
+}
+.work-item-6 .work-year {
+  margin-left: 59%;
+}
+.work-item-3 .work-image {
+  margin-left: -21px;
+ }
+ .work-item-3 .work-year {
+  margin-left: 10%;
+ }
+
+
+ .work-item-5 .work-title {
+  margin-left: 10px;
+ }
+ 
+.work-item-6 .work-title {
+ margin-left: -100px;
+}
+
+
+

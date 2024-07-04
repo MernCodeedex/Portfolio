@@ -1,0 +1,271 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 20px;
+    font-family: 'Metropolis-Light';
+    transition: background-color 2s ease-in-out;
+  
+  
+  }
+  #vb{
+    font-family: 'Metropolis-Light';
+  
+  }
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left; /* Ensure text is left-aligned */
+  }
+  
+  .footer h1, .footer h2 {
+    text-align: left; /* Ensure headers are left-aligned */
+  }
+  
+  .footer h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  .lets{
+    font-family: 'Metropolis-Light';
+    font-size:64px;
+    margin-left: 50px;
+    margin-top: 64px;
+  }
+  .mkkl{
+    margin-left: 35px;
+  }
+  .mkmkmk{
+    margin-top: 32px !important;
+    margin-left: 50px !important;
+  }
+  @font-face {
+    font-family: 'Metropolis-Light';
+    src: url('../Fonts/Metropolis-Light.otf') format('opentype');
+  }
+  .footer h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    font-weight: normal;
+  }
+  
+  .footer p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .footer-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+  
+  .links {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  .social {
+    flex: 1;
+    margin: 20px;
+    margin-left: -260px; /* Move the social section closer to the links section */
+  }
+  
+  .contact-form {
+    flex: 1;
+    margin: 20px;
+  }
+  
+  /* ... rest of the CSS styles remain the same ... */
+  
+  .links h3, .social h3, .contact-form h3 {
+    font-size: 1.2em;
+    margin: 20px 0 10px;
+    font-weight: normal;
+  }
+  
+  .links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s;
+  }
+  
+  .links a:hover {
+    color: #ccc;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin-left: -28px;
+    
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 3em;
+    margin: 0 30px;
+    transition: transform 0.3s, color 0.3s;
+  
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.1);
+    color: #ccc;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .contact-form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .contact-form input::placeholder {
+    color: #ccc;
+  }
+  
+  .contact-form button {
+    padding: 10px 30px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ffffff;
+    color: #000;
+  }
+  
+  /* .book-call-button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  } */
+  
+  .book-call-btn:hover {
+    background-color: #ccc;
+  }
+  
+  .footer-note {
+    margin-top: 40px;
+    font-size: 0.8em;
+    color: #ccc;
+    margin-left: 50px !important;
+   
+  }
+  
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    .footer-sections {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .links, .social, .contact-form {
+      margin: 100px 0;
+    }
+    
+    .links{
+      margin-top: -3%;
+    }
+    .social {
+      margin-left: 0;
+      margin-top: -14%;
+    }
+    .social-icons a{
+      font-size: 1.5rem;
+      margin-left: 0;
+    }
+  
+  }
+  @media only screen and (min-width: 700px) and (max-width: 1200px) {
+    .footer-sections .contact-form {
+      margin-top: 30%; /* Adjust the margin-top value as needed */
+    }
+    .social {
+      margin-left: 1;
+      margin-top: -7%;
+    }
+  }
+  
+  /* Additional Media Queries for Other Screen Sizes */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .footer-sections {
+      flex-wrap: wrap;
+    }
+    .contact-form {
+      margin-top: 50%;
+    }
+    .links, .social, .contact-form {
+      flex: 1 1 33%; /* Equal width for each section */
+      margin: 20px;
+    }
+    
+    .social {
+      margin-left: 1;
+      margin-top: 1%;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    .footer-sections {
+      flex-wrap: nowrap;
+    }
+   
+    
+    .links, .social{
+      flex: 1; /* Equal width for each section */
+      margin: 20px;
+    }
+    
+    .social {
+      margin-left: -260px;
+    }
+  }
+  
+  .line-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .line {
+    flex: 0.06;
+    height: 1px;
+    background-color: white;
+  }
+  .lineed {
+    flex: 0.06;
+    height: 1px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  
+  
